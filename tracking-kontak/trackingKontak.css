@@ -36,20 +36,13 @@ body
   font-weight: bold;
 }
 
-.btnExit
-{
-  margin-top: 30px;
-  width: 50px;
-  height: 25px;
-  background-color: #9EFBDD;
-  border: none;
-}
-
 .btnExitImg
 {
-  width: 50%;
-  height: 75%;
-  transform: translate(10px, 50%);
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 #apakahpositif
@@ -325,7 +318,7 @@ body
     font-size: 40px;
   }
 
-    .btnExit
+  .btnExit
   {
     position: absolute;
     top: 30px;
