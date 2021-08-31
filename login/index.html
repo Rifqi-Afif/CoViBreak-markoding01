@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="login.css" rel="stylesheet" type="text/css" />
+
+	<!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js">
+	</script>
+</head>
+<body>
+  <script src="login.js"></script>
+
+  <div class="topBox">
+    
+    <button class="btnExit">
+      <a href="https://covibreak-markoding01.markoding01.repl.co/login-or-signup/">
+        <img src="/Images/btnExit.png" class="btnExitImg"/>
+      </a>
+    </button>
+    
+    <h1 class="title">CoViBreak</h1>
+  </div>
+  <div id="loginText">
+    <p style="font-weight: bold;">Log-in</p>
+  </div>
+  
+  <div class="inputEmailTelpPassLogin">
+    <p class="teksInput">Email</p>
+    <input type="email" placeholder="Masukan email anda" class="input"  id="emailLogin" required/>
+
+    <p class="teksInput">Telepon</p>
+    <input type="tel" placeholder="Masukan nomor telepon anda" class="input" id="phoneLogin" pattern="[0-9]" required/>
+    
+    <p class="teksInput">Password</p>
+    <input type="password" placeholder="Masukan password anda" class="input" id="password" required/>
+    <img src="/Images/showPass.png" class="showHide" onclick="showHide()"/>
+
+    <div style="margin-top: 10px;">
+      <a class="lupaPassword">Lupa Password?</a>
+    </div>
+
+    <button class="masuk" onclick="validateForm()">
+      Masuk
+    </button>
+  </div>
+</body>
+</html>

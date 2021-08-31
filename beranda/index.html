@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beranda</title>
+	<link href="beranda.css" rel="stylesheet" type="text/css" />
+
+	<!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js">
+	</script>
+	<script src="https://getuikit.com/v2/src/js/components/datepicker.js">
+	</script>
+</head>
+
+<body>
+  <script src="beranda.js">
+    </script>
+	<div class="topBox">
+		<div style="justify-content: center; transform: translateY(10%); display: flex;">
+			<img src="/Images/LogoCoViBreak.png" class="logoCovibreak"/>
+      <h1 class="berandaTitle"><b>CoViBreak</b></h1>
+    </div>
+  </div>
+
+  <div>
+    <img src="/Images/lonceng.png" class="btnNotifikasi" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/notif/'">
+  </div>
+
+  <div class="ketToggleButton">
+    <div>
+      <p style="margin-bottom: 0px" class="textToggleButton">Akses Lokasi</p>
+    </div>
+    <div class="kotak" onclick="checked()">
+      <input type="checkbox" id="toggle">
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column">
+
+    <div style="display: flex; justify-content: center; margin-top: 50px">
+      <div style="margin-right: 25px;">
+        <button class="btnFitur" id="btnCekZonaCovid" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/cek-zona-covid/'">
+          <img class="fiturImg" src="/Images/btnCekZonaCovid.png">
+          <p class="fiturText">Cek Zona Covid Terdekat</p>
+        </button>
+      </div>
+      <div>
+        <button class="btnFitur" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/cek-kerumunan/'">
+          <img class="fiturImg" src="/Images/btnCekKerumunan.png" style="width: 134px; height: 90px;">
+          <p class="fiturText"> Cek Kerumunan Terdekat</p>
+        </button>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 50px">
+      <div style="margin-right: 25px;">
+        <button class="btnFitur" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/tracking-kontak/apakah-positif.html'">
+          <img class="fiturImg" src="/Images/btnTrackingKontak.png" style="width: 134px; height: 90px;">
+          <p class="fiturText">Tracking Kontak</p>
+        </button>
+      </div>
+      <div>
+        <button class="btnFitur" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/cari-bantuan'">
+          <img class="fiturImg" src="/Images/btnCariBantuan.png" style="width: 134px; height: 90px;">
+          <p class="fiturText">Cari Bantuan</p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottomBox" style="display: flex">
+    <img src="/Images/btnBerandaChoose.png"  class="buttonProfileAndBeranda" style="margin-left: 25px; margin-right: 95px;"/>
+    <img src="/Images/btnProfile.png" class="buttonProfileAndBeranda" style="margin-left: 95px;" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/Profile'"/>
+  </div>
+</body>
+</html>

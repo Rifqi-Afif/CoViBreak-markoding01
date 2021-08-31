@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="profil.css" rel="stylesheet" type="text/css" />
+
+	<!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js">
+	</script>
+	<script src="https://getuikit.com/v2/src/js/components/datepicker.js">
+	</script>
+</head>
+
+<body onload="loadPage()">
+  <script src="profil.js"></script>
+
+  <div class="topBoxOne">
+    <h1 class="berandaTitle" style="transform: translateY(75%)"><b>Profile</b></h1>
+    </div>
+  </div>
+
+  <center>
+    <div style="border-style: solid; height: 125px; width: 125px; border-radius: 100%; margin-top: 25px">
+      <img style="height: 100px; width: 100px; border-radius: 100%; margin-top: 10px" src="/Images/avatar.png" alt="ProfilePicture" id="profilePicture"/>
+    </div>
+    <p style="font-size: 30px; color: black; font-weight: bold; margin-top: 0" id="name">CoViBreak</p>
+
+    <div style="display: flex;">
+      <div class="emailDanTelponDiv">
+        <img src="/Images/email.png" class="emailDanTelpon"/> 
+      </div>
+      <p class="emailDanTelponText" id="email">CoViBreak@gmail.com</p>
+    </div>
+    <hr color="black" style="width: 90%; margin-top: 0px">
+
+    <div style="display: flex;">
+      <div class="emailDanTelponDiv">
+        <img src="/Images/telp.png" class="emailDanTelpon"/> 
+      </div>
+      <p class="emailDanTelponText" style="margin-left: 160px" id="telp">081234567899</p>
+    </div>
+    <hr color="black" style="width: 90%; margin-top: 0px">
+  </center>
+
+  <button id="btnEditProfile" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/Profile/profile-edit.html'">Edit Profile</button>
+
+  <div class="bottomBox" style="display: flex">
+    <img src="/Images/btnBeranda.png"  class="buttonProfileAndBeranda" style="margin-left: 25px; margin-right: 95px;" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/beranda'"/>
+    <img src="/Images/btnProfileChoose.png" class="buttonProfileAndBeranda" style="margin-left: 95px;"/>
+  </div>
+</body>
+</html>

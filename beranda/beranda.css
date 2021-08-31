@@ -1,0 +1,132 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.berandaTitle
+{
+  text-align: center;
+  font-family: 'Coustard', serif;
+  margin-top: 0px;
+  font-size: 30px;
+  margin: 0px;
+  transform: translateY(35%);
+}
+
+.topBox
+{
+  margin-top: 0px;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 10px;
+  background-color: #9EFBDD;
+}
+
+.bottomBox
+{
+  background-color: #9EFBDD;
+  height: 90px;
+  margin-top: 80px;
+}
+
+.logoCovibreak
+{
+  margin-right: 25px;
+  width: 20%;
+}
+
+.fiturText
+{
+  font-size: 13px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.btnFitur
+{
+  height: 150px;
+  width: 150px;
+  border-radius: 30px;
+  background: linear-gradient( #48B1B1, #C0F3F3);
+  font-family: 'Raleway', sans-serif;
+}
+
+.fiturImg
+{
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.buttonProfileAndBeranda
+{
+  margin-top: -35px;
+  width: 60px;
+  height: 60px;
+}
+
+.kotak
+{
+  position: absolute;
+  top: 133px;
+  left: 290px;  
+}
+
+#toggle
+{
+  width: 50px;
+  height: 25px;
+  background-color: #d1d1d1;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+#toggle:checked
+{
+  background-color: lightblue;
+}
+
+#toggle::before
+{
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  transition: 0.5s;
+}
+
+#toggle:checked::before
+{
+  left: 35px;
+}
+
+.ketToggleButton
+{
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.textToggleButton
+{
+  font-family: 'Coustard', serif;
+  margin-left: 160px;
+  font-size: 20px;
+}
+
+.btnNotifikasi
+{
+  position: absolute;
+  top: 125px;
+  left: 35px;
+  width: 50px;
+  height: 50px;
+}

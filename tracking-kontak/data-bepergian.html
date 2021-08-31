@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tracking Kontak</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<link href="trackingKontak.css" rel="stylesheet" type="text/css" />
+
+	<!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js">
+
+	</script>
+	<script src="https://getuikit.com/v2/src/js/components/datepicker.js">
+	</script>
+
+</head>
+
+<body>
+	<script src="trackingKontak.js"></script>
+  <script src="/notif/notif.js"></script>
+	<div id="opacity">
+		<div class="topBox">
+
+			<button class="btnExit">
+      <a href="https://covibreak-markoding01.markoding01.repl.co/tracking-kontak/apakah-mau-memberi-info.html" id="btnExit">
+        <img src="/Images/btnExit.png" class="btnExitImg" />
+      </a>
+      </button>
+      
+      <h1 class="title">Tracking Kontak</h1>
+    </div>
+    <div style="margin-top: 50px">
+      <b><p class="teksInput">Saya Positif Covid Tanggal</p></b>
+      <input type="date" class="inputForm form tglPositif"/>
+
+      <b><p class="teksInput">Tempat Bepergian</p></b>
+      <input class="controls pac-input form" type="text" placeholder="Cari Lokasi" style="margin-top: 75px;"/>
+      <div id="map" class="input map"></div>
+
+      <b><p class="teksInput">Tanggal Bepergian</p></b>
+      <input type="date" class="inputForm form" id="tglBepergian"/>
+
+      <b><p class="teksInput">Jam Pergi</p></b>
+      <input type="time" class="inputForm form" id="jamPergi"/>
+
+      <b><p class="teksInput">Jam Pulang</p></b>
+      <input type="time" class="inputForm form" id="jamPulang"/>
+
+      <div id="formNew"></div>
+
+      <button style="border: none; background: none;">
+        <img src="/Images/btnPlus.png" class="imageButton" onclick="tambahFormulir()" id="btnPlus"/>
+      </button>
+
+      <b><p class="teksInput">Surat Hasil Test Positif</p></b>
+      <div style="border:solid 2px black; height: 150px;" class="inputForm form" style="display: none;">
+        <img id="tempatFoto" style="height: 90px; width: 100px;"/>
+        <input type="file" class="inputForm form" id="suratPositif" style="transform: translateY(85%)" onchange="loadFile(event)" accept="image/*" required/>
+      </div>
+
+      <b><p class="teksInput">Status saat ini</p></b>
+      <div style="display: flex; margin-left: 20px">
+        <div style="display: flex">
+          <p style="color: black">Rawat inap</p>
+          <input type="radio" name="statusIsolasi" class="radioIsolasi" value="rawatInap"/>
+        </div>
+        <div style="display: flex; margin-left: 100px">
+          <p style="color: black">Isolasi mandiri</p>
+          <input type="radio" name="statusIsolasi" class="radioIsolasi" value="isolasiMandiri"/>
+        </div>
+      </div>
+    </div>
+
+    <button style="background-color: #4CA6A6; border-radius: 50px; width: 100px; height: 30px; margin-top: 15px; margin-left: 250px" onclick="submit()" id="submitFormulir">Kirim</button>
+
+    <p style="color: red; margin-left: 175px; display: none;" id="validasiTidakLengkap">Formulir Belum Lengkap</p>
+    
+  </div>
+    <div class="bottomBox"></div>
+  </div>
+
+  <div id="konfirmasiPengirimanFormulir">
+    <p style="font-size: 17px; color: black; margin-left: 20px"><b>Kirim Data?</b></p>
+    <div style="display: flex; margin-left: 200px; margin-top: 0px">
+    <a href="https://covibreak-markoding01.markoding01.repl.co/tracking-kontak/terimakasih.html" style="transform: translateY(65%); color: black" onclick="yaKirim()" type="submit">Ya</a>
+    <a style="margin-left: 25px; transform: translateY(65%); color: black;" onclick="batalSubmit()">Tidak</a>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-joHIQ1oEOF4Fiua9E5gDmNhIiT6RI2g&callback=initAutocomplete&libraries=places&v=weekly" async=""></script>
+</body>
+</html>
+<!--AIzaSyB-joHIQ1oEOF4Fiua9E5gDmNhIiT6RI2g-->

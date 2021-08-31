@@ -1,0 +1,351 @@
+body
+{
+  margin: 0 0;
+}
+
+.topBox
+{
+  background-color: #9EFBDD;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 10px;
+}
+
+.topBoxOne
+{
+  background-color: #9EFBDD;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 10px;
+}
+
+.bottomBox
+{
+  background-color: #9EFBDD;
+  height: 60px;
+  margin-top: 50px;
+}
+
+.title
+{
+  text-align: center;
+  font-family: 'Coustard', serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btnExit
+{
+  margin-top: 30px;
+  width: 50px;
+  height: 25px;
+  background-color: #9EFBDD;
+  border: none;
+}
+
+.btnExitImg
+{
+  width: 50%;
+  height: 75%;
+  transform: translate(10px, 50%);
+}
+
+#apakahpositif
+{
+  font-size: 20px;
+  font-family: 'Coustard', serif;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.ya
+{
+  font-family: 'Raleway', sans-serif;
+  margin-right: 25px;
+  background-color: #4CA6A6;
+  color: white;
+  font-size: 18px;
+  width: 125px;
+  height: 35px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.tidak
+{
+  font-family: 'Raleway', sans-serif;
+  margin-left: 25px;
+  background-color: #4CA6A6;
+  color: white;
+  font-size: 18px;
+  width: 125px;
+  height: 35px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.terimakasih
+{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  margin-top: 40px
+}
+
+.btnBackBeranda
+{
+  background-color: #4CA6A6;
+  color: black;
+  font-size: 17px;
+  width: 200px;
+  height: 40px;
+  margin-left: 150px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.teksInput
+{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  color: black;
+  transform: translateX(3%)
+}
+
+.inputForm
+{
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border-color: lightgrey;
+  align-content: center;
+  transform: translateX(5%);
+}
+
+.radioIsolasi
+{
+  transform: translateY(30%);
+}
+
+.imageButton
+{
+  border: none;
+  background: none;
+  width: 30px;
+  margin-top: 2px;
+  margin-left: 300px;
+}
+
+#konfirmasiPengirimanFormulir
+{
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  top: 220px;
+  left: 27px;
+  visibility: hidden;
+}
+
+.inputForm2
+{
+  display: none;
+}
+
+.map {
+  max-width: 90%;
+  height: 350px;
+  margin: 0 auto;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+@media(min-width: 500px)
+{
+  #apakahpositif
+  {
+    font-size: 25px;
+  }
+
+  .ya
+  {
+    margin-top: 75px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-right: 50px;
+  }
+
+  .tidak
+  {
+    margin-top: 75px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+}
+
+@media(min-width: 580px)
+{
+  .ya
+  {
+    margin-top: 125px;
+    width: 150px;
+    height: 50px;
+    font-size: 23px;
+    margin-right: 50px;
+  }
+
+  .tidak
+  {
+    margin-top: 125px;
+    width: 150px;
+    height: 50px;
+    font-size: 23px;
+    margin-left: 50px;
+  }
+
+  #apakahpositif
+  {
+    font-size: 30px;
+  }
+}
+
+@media(min-width: 700px)
+{
+  .ya
+  {
+    margin-top: 50px;
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    margin-right: 50px;
+  }
+
+  .tidak
+  {
+    margin-top: 50px;
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  .topBox
+  {
+    height: 150px;
+  }
+
+  .title
+  {
+    margin-top: 15px;
+    font-size: 40px;
+  }
+
+    .btnExit
+  {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    opacity: 0;
+    border: none;
+  }
+
+  .btnExitImg
+  {
+    top: 30px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+  }
+
+  #apakahpositif
+  {
+    margin-top: 75px;
+    font-size: 35px; 
+  }
+}

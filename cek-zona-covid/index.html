@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cek Zona Covid Terdekat</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js">
+
+	</script>
+</head>
+
+<body>
+	<div class="topBoxCekZonaCovid">
+		<a href="https://covibreak-markoding01.markoding01.repl.co/CekZonaCovid.html">
+				<button class="btnExit">
+      <a href="https://covibreak-markoding01.markoding01.repl.co/beranda/" id="btnExit">
+        <img src="/Images/btnExit.png" class="btnExitImg" />
+      </a>
+      </button>
+    </a>
+    <h1 class="titleCekZonaCovid uk-position-top-center ">Cek Zona Covid <br> Terdekat </h1>
+  </div>
+    
+    <!--The div element for the map -->
+  <div class="uk-container" id="zona-covid-map" style="height: 400px; margin: 20px; padding: 30px;"></div>
+
+   
+   <div class="divKeteranganZona">
+      <center>
+      <br>
+        <p>
+          
+      <div class="titleKeteranganZona" style="background-color: white; max-width: 90%;" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/cek-zona-covid/zona-merah.html'">
+        <div style="border-radius: 100px; background-color: red; width: 25px; height: 25px; border-color: black; border-style: solid; transform: translate(10%, 30%)"></div>
+        <p style="font-family: 'Raleway', sans serif; transform: translate(20%, -110%); font-size: 20px; align-text: center">
+          <b>Zona Risiko Tinggi</b>
+        </p>
+      </div> </a>
+      <br>
+      <div class="titleKeteranganZona" style="background-color: white; max-width: 90%;" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/cek-zona-covid/zona-orange.html'">
+        <div style="border-radius: 100px; background-color: orange; width: 25px; height: 25px; border-color: black; border-style: solid; transform: translate(10%, 30%)"></div>
+        <p style="font-family: 'Raleway', sans serif; transform: translate(20%, -110%); font-size: 20px; align-text: center;"><b>Zona Risiko Sedang</b>
+        </p>
+      </div>
+      <br>
+      <div class="titleKeteranganZona" style="background-color: white; max-width: 90%;" onclick="window.location.href='https://covibreak-markoding01.markoding01.repl.co/cek-zona-covid/zona-kuning.html'">
+        <div style="border-radius: 100px; background-color: yellow; width: 25px; height: 25px; border-color: black; border-style: solid; transform: translate(10%, 30%)"></div>
+        <p style="font-family: 'Raleway', sans serif; transform: translate(20%, -110%); font-size: 20px; align-text: center;"><b>Zona Risiko Rendah</b>
+        </p>
+      </div>
+      </center>
+      
+      <button class="btnInfoSatgasCovid" onclick="window.location.href='https://covid19.go.id/'">Info Satgas Covid</button>
+    </div>
+  </div>
+      
+      <script src="cek-zona-covid-terdekat.js">
+    </script>
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+       
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-joHIQ1oEOF4Fiua9E5gDmNhIiT6RI2g&callback=initMap&libraries=&v=weekly"async></script>
+    <script 
+    src="https://api.kawalcorona.com/indonesia/provinsi"</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body
+{
+  margin: 0 0;
+}
+
+.topBoxOne
+{
+  text-align: center;
+  background-color: #9EFBDD;
+  height: 120px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 10px;
+}
+
+.bottomBox
+{
+  background-color: #9EFBDD;
+  height: 60px;
+}
+
+.title
+{
+  transform: translateY(50%);
+  font-family: 'Coustard', serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.backgroundAvatar
+{
+  border-radius: 100%;
+  background-color: #FAEE86;
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+}
+
+.ilustrasiAvatar
+{
+  margin-top: 6px;
+  width: 22px;
+  height: 30px;
+}
+
+.covibreakDivText
+{
+  transform: translateY(50%);
+  font-family: 'Coustard', serif;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.kepanjanganCovibreak
+{
+  transform: translateY(50%);
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: black;
+}
+
+.buttonLoginSignup
+{
+  border-radius: 25px;
+  font-size: 20px;
+  color: white;
+  background-color: #4CA6A6;
+  width: 300px;
+  height: 50px;
+}

@@ -1,0 +1,68 @@
+body
+{
+  margin: 0 0;
+}
+
+.topBox
+{
+  display: flex;
+  background-color: #9EFBDD;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 10px;
+}
+
+.bottomBox
+{
+  background-color: #9EFBDD;
+  height: 60px;
+  margin-top: 50px;
+}
+
+.title
+{
+  text-align: center;
+  font-family: 'Coustard', serif;
+  transform: translateX(10%);
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.btnExit
+{
+  margin-top: 30px;
+  width: 50px;
+  height: 25px;
+  background-color: #9EFBDD;
+  border: none;
+}
+
+.btnExitImg
+{
+  width: 50%;
+  height: 75%;
+  transform: translate(10px, 50%);
+}
+
+.notifTitle
+{
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.pesan
+{
+  color: black;
+  margin-top: 0px;
+}
+
+.divPesan
+{
+  max-width: 85%;
+  margin: 0 auto;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<link href="profil.css" rel="stylesheet" type="text/css" />
+
+	<!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js">
+
+	</script>
+	<script src="https://getuikit.com/v2/src/js/components/datepicker.js">
+
+	</script>
+</head>
+
+<body>
+	<script src="profil.js">
+	</script>
+
+	<div class="topBox">
+		<button class="btnExit">
+      <a href="https://covibreak-markoding01.markoding01.repl.co/Profile/" id="btnExit">
+        <img src="/Images/btnExit.png" class="btnExitImg" />
+      </a>
+    </button>
+    <h1 class="title"><b>Profile</b></h1>
+  </div>
+  <center>
+    <div style="border-style: solid; height: 125px; width: 125px; border-radius: 100%; margin-top: 25px">
+    <img id="output" style="height: 100px; width: 100px; border-radius: 100%; margin-top: 10px" src="/Images/avatar.png"/>
+  </div>
+  </center>
+
+  <label for="inputFoto">
+      <div style="border-style: solid; border-color: black; width: 50px; height: 50px; border-radius: 100%; position: absolute; left: 200px; top: 200px; background-color: #42a5f5;">
+        <img src="/Images/camera.png" class="changeFoto">
+      </div>
+    </label>
+    <input type="file" style="opacity: 0; width: 0; height: 0;" id="inputFoto" onchange="loadFile()" />
+
+    <p style="margin-left: 25px; font-size: 18px;" id="p">Klik tombol simpan jika anda sudah memasukkan data baru anda.</p>
+
+    <div style="width: 90%; margin: 0 auto">
+      <div style="display: flex; margin-bottom: 0px">
+
+        <p style="color: black; margin-top: 10px; margin-bottom: 0px"><b>Nama</b></p>
+
+        <div class="divHijau">
+          <img src="/Images/user.png" style="width: 15px; height: 20px; margin-left: 7.5px; margin-top: 1px">
+        </div>
+
+      </div>
+      <input type="text" placeholder="Masukkan nama baru anda" class="inputDataBaru" id="newName">
+
+      <div style="display: flex; margin-bottom: 0px">
+
+        <p style="color: black; margin-top: 10px; margin-bottom: 0px"><b>Email</b></p>
+
+        <div class="divHijau">
+          <img src="/Images/emailWhite.png" style="width: 15px; height: 20px; margin-left: 7.5px; margin-top: 1px">
+        </div>
+
+      </div>
+      <input type="text" placeholder="Masukkan email baru anda" class="inputDataBaru" id="newEmail">
+
+      <div style="display: flex; margin-bottom: 0px">
+
+        <p style="color: black; margin-top: 10px; margin-bottom: 0px"><b>Telepon</b></p>
+
+        <div class="divHijau">
+          <img src="/Images/telpWhite.png" style="width: 15px; height: 20px; margin-left: 7.5px; margin-top: 1px">
+        </div>
+
+      </div>
+      <input type="tel" placeholder="Masukkan telepon baru anda" class="inputDataBaru" id="newTelp">
+    </div>
+    
+    <button style="background-color: #4CA6A6; border-radius: 15px; color: white; font-size: 18px; width: 120px; height: 35px; margin-left: 225px; margin-top: 30px; margin-bottom: 50px" onclick="save()">Simpan</button>
+</body>
+</html>

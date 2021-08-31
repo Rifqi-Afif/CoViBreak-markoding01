@@ -1,0 +1,270 @@
+body
+{
+  margin: 0 0;
+}
+
+.topBox
+{
+  display: flex;
+  background-color: #9EFBDD;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 10px;
+}
+
+.bottomBox
+{
+  background-color: #9EFBDD;
+  height: 60px;
+  margin-top: 50px;
+}
+
+.title
+{
+  text-align: center;
+  font-family: 'Coustard', serif;
+  transform: translateX(10%);
+  font-size: 25px;
+}
+
+.btnExit
+{
+  margin-top: 30px;
+  width: 50px;
+  height: 25px;
+  background-color: #9EFBDD;
+  border: none;
+}
+
+.btnExitImg
+{
+  width: 50%;
+  height: 75%;
+  transform: translate(10px, 50%)
+}
+
+mkd-container {
+  padding: 20px;
+}
+
+.mkd-text {
+  margin: 150px;
+}
+
+.mkd-center {
+  text-align: center;
+}
+
+.mkd-justify {
+  text-align: justify;
+}
+
+#box {
+  background: #fff;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.teksInput
+{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  color: black;
+}
+
+.inputForm
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 315px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: lightgrey;
+}
+
+.radioIsolasi
+{
+  transform: translateY(30%)
+}
+
+.imageButton
+{
+  border: none;
+  background: none;
+  width: 30px;
+  margin-top: 2px;
+  margin-left: 300px;
+}
+
+.titleKeteranganZona
+{
+  border-radius: 50px;
+  display: flex;
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+}
+
+#konfirmasiPengirimanFormulir
+{
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  top: 220px;
+  left: 27px;
+  visibility: hidden;
+}
+
+.inputForm2
+{
+  display: none;
+}
+
+.topBoxOne
+{
+  background-color: #9EFBDD;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 10px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.topBoxCekZonaCovid
+{
+  display: flex;
+  background-color: #9EFBDD;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 10px;
+}
+
+.titleCekZonaCovid
+{
+  width: 330px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Coustard', serif;
+}
+
+body
+{
+  margin: 0 0;
+}
+
+.topBox
+{
+  display: flex;
+  background-color: #9EFBDD;
+  height: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 10px;
+}
+
+.bottomBox
+{
+  background-color: #9EFBDD;
+  height: 60px;
+  margin-top: 50px;
+}
+
+.title
+{
+  font-family: 'Coustard', serif;
+  font-size: 35px;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+.btnExit
+{
+  margin-top: 30px;
+  width: 50px;
+  height: 25px;
+  background-color: #9EFBDD;
+  border: none;
+}
+
+.btnExitImg
+{
+  width: 50%;
+  height: 75%;
+  transform: translate(10px, 50%);
+}
+
+#loginText
+{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.inputEmailTelpPassLogin
+{
+  font-family: 'Raleway', sans-serif;
+  margin-left: 20px;
+}
+
+.teksInput
+{
+  color: black;
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.input
+{
+  border-radius: 15px;
+  width: 90%;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.showHide
+{
+  position: absolute;
+  left: 285px;
+  top: 400px;
+  width: 30px;
+  height: 20px;
+}
+
+.masuk
+{
+  border-radius: 50px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #4CA6A6;
+  color: white;
+  width: 93%;
+  height: 45px;
+  font-weight: bold;
+  font-size: 18px;
+  align-content: center;
+  margin-top: 25px;
+}
+
+.divKeteranganZona
+{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: linear-gradient(#4BC2BE, #94E0CC);
+  max-width: 100%;
+  height: 300px;
+}

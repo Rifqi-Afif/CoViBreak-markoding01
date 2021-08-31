@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifikasi</title>
+  <link href="notif.css" rel="stylesheet" type="text/css" />
+
+	<!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js">
+	</script>
+	<script src="https://getuikit.com/v2/src/js/components/datepicker.js">
+	</script>
+</head>
+
+<body onload="loadNotif()">
+  
+	<div class="topBox">
+
+		<button class="btnExit">
+      <a href="https://covibreak-markoding01.markoding01.repl.co/beranda" id="btnExit">
+        <img src="/Images/btnExit.png" class="btnExitImg" />
+      </a>
+    </button>
+    
+    <h1 class="title">Notifikasi</h1>
+  </div>
+
+  <div class="divPesan">
+    <p class="notifTitle">Kasus Positif</p>
+    <p id="pesan" class="pesan"></p>
+  </div>
+  <center>
+    <hr color="black" style="max-width: 90%; box-shadow: 0px 8px 20px 2px;">
+  </center>
+<body>
+  <div id="newNotif"></div>
+
+  <script src="tracking-kontak/trackingKontak.js"></script>
+  <script src="notif.js"></script>
+</body>
+</html>
