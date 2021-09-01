@@ -50,7 +50,7 @@ const mocksCityMap = {
     contentString: 'Kepulauan Riau Total Kasus 50.712',
   },
   "DKI Jakarta": {
-    center: { lat:  -6.211544, lng: 106.845172 },
+    center: { lat:  6.1745, lng: 106.8227 },
     population: 842647,
     contentString: 'DKI Jakarta Total Kasus 842.647',
   },
@@ -65,7 +65,7 @@ const mocksCityMap = {
     contentString: 'Jawa Tengah Total Kasus 457.259',
   },
   "DI Yogyakarta": {
-    center: { lat: -7.8753849, lng: 110.4262088 },
+    center: { lat: 7.7956, lng: 110.3695 },
     population: 140898,
     contentString: 'DI Yogyakarta Total Kasus 140.898',
   },
